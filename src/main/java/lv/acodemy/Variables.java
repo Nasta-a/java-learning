@@ -118,5 +118,30 @@ public class Variables {
         int preIncerement = ++counter; // preIncerement = 13; counter = 13;
         System.out.println(postIncrement);
         System.out.println(preIncerement);
+
+        String name = "John";
+        String lastName = "Doe";
+
+        // print them out separately
+        System.out.println(name);
+        System.out.println(lastName);
+
+        // Concatenation
+        String fullName = name + " " + lastName;
+        System.out.println(fullName);
+
+        // Interpolation
+        // %s - for String
+        // %d - for digits
+        System.out.println(String.format("My name is: %s, My surname is: %s", name, lastName));
+        System.out.printf("My name is: %s, My surname is: %s\n", name, lastName);
+        System.out.printf("My name is: %s, My surname is: %s%n", name, lastName);
+
+        // Implicit variable
+        var myCurrentAge = 33;
+        var text = "Hello World";
+
+        String myVar;
+        myVar = "Hello, World!";
     }
 }
